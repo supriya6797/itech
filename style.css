@@ -1,0 +1,49 @@
+
+body{
+ background-color: #dcdcdc;
+}.container1{
+    background-color: red;
+    padding: 30px;}
+ 
+.container{
+    margin: 0px,0px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+h2{
+    font-family: sans-serif;
+    text-align: center;
+    font-style: italic;
+    padding: 4px;
+    color: white;
+}
+
+h3{color: white;
+    border-bottom: 3px solid red;
+}
+h4{
+    font-size: 23px;
+}
+.col-sm-4{
+    border: 1px solid red;
+
+}
+.image{
+    height:300px;
+    width:600px;
+    display: flex;
+    justify-content: center;
+}
+div{
+    margin: 2px;
+}
+.footer{
+    padding: 40px;
+    background-color: black;
+    color: white;
+display: flex;
+justify-content: center;
+}
+
+
