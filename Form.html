@@ -4,352 +4,210 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iTech-Form</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-     rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-     crossorigin="anonymous">
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"></script>
-      <link rel="stylesheet" href="style.css">
-      
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #dcdcdc;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            padding: 1rem;
+        }
+        .container1 {
+            background-color: red;
+            padding: 30px;
+            color: white;
+            text-align: center;
+        }
+        .container1 h2 {
+            font-style: italic;
+        }
+        h3 {
+            color: white;
+            border-bottom: 3px solid red;
+            margin-top: 1rem;
+        }
+        .image {
+            max-width: 100%;
+            height: auto;
+        }
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .form-check p {
+            margin-bottom: 0;
+        }
+        .footer {
+            padding: 40px;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        @media (min-width: 768px) {
+            .main-content {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav class="navbar bg-body-tertiary">
-            <div class="container">  
-              <a class="navbar-brand" href="#">
-                <img src="images\logomain.png" alt="Bootstrap" width="" height="">
-              </a>
-              <a class="navbar-brand" href="#">
-                  <img 
-                  style="width: 120px;height: 60px;"
-                  src="images\logo.png"  alt ="Bootstrap" >
-                </a> 
+        <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logomain.png" alt="Main Logo" style="width: auto; height: auto;">
+                </a>
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="Secondary Logo" style="width: 120px; height: 60px;">
+                </a>
             </div>
-          </nav>
+        </nav>
     </header>
-    <div>
-    <body>
+    <main>
         <div class="container1">
-            <h2>
-                Access New Levels of Creative Freedom and Control With 3D-Powered Design
-            </h2>
-          </div>
-          <h3>.</h3>
-          <div class="container text-center">
-            <div class="row">
-              <div class="col-sm-8">
-                <div style="text-align: center;">
-<h5>A product “shoot” without cameras. A dozen variations on a product design with
-     just a few clicks of 
-    the button. A full set of packaging designs with no physical mockups.
-     These are just a few of the possibilities 3D design offers today’s creative professionals.
-      The result: Unprecedented creative freedom, scalability, and design quality—whether you’re a 3D expert or just getting started.</h5>
-
-<h5>In the past, creating production-quality 3D designs required extensive training and complex software 
-    few brands—and even fewer individuals—could afford, not to mention state-of-the-art hardware to operate it.
-</h5>
-</div>                 
-</div>
-    <!-- <div style="text-align: center;"> -->
-     <card >
-        <img 
-      class="image"
-        src="images\cardimg.png"  alt ="Bootstrap" > 
-     </card>
-     </div>
-    <!-- </div> -->
-              <div class="col-sm-4" >
+            <h2>Access New Levels of Creative Freedom and Control With 3D-Powered Design</h2>
+        </div>
+        <h3>.</h3>
+        <div class="container main-content">
+            <div class="col-md-8">
+                <div class="text-center">
+                    <h5>A product “shoot” without cameras. A dozen variations on a product design with just a few clicks of the button. A full set of packaging designs with no physical mockups. These are just a few of the possibilities 3D design offers today’s creative professionals. The result: Unprecedented creative freedom, scalability, and design quality—whether you’re a 3D expert or just getting started.</h5>
+                    <h5>In the past, creating production-quality 3D designs required extensive training and complex software few brands—and even fewer individuals—could afford, not to mention state-of-the-art hardware to operate it.</h5>
+                </div>
+                <div class="text-center">
+                    <img class="image" src="images/cardimg.png" alt="Card Image">
+                </div>
+            </div>
+            <div class="col-md-4">
                 <div class="card">
-                    <div class="card-body" >
-                     <form id="contact-form" action="https://formspree.io/f/xyzgjryl" method="POST">
-                        <div>
-                            <button type="submit" class="btn btn-link" style="padding: 18px;color: rgb(10, 10, 10);font-size: larger;font-weight: 500;">Download Now</button>
-                        </div>
-                        <div>
-                           
-                        <input type="text" class="form-control" name="FirstName"
-                         placeholder="First name" aria-label="First name">
-                        </div>
-                        <div>
-                        <input type="text" class="form-control"name="LastName"
-                         placeholder="Last name" aria-label="last name">
-                        </div>
-                        <div>
-                            <input type="email" class="form-control"
-                             id="email"  name="email"
-                            placeholder="Email">
-                        </div>
-                        <div>
-                            <input type="text" class="form-control"
-                             id="Mobile no."  name="Contact no"
-                            placeholder="mobile no">
-                        </div>
-                        <div>
-                            <input type="text" class="form-control"
-                             id="Company Name" name="Comapny Name"
-                            placeholder="Company Name">
-                        </div>
-             
-                        <div>
-                            <select class="form-select" aria-label="Job Title*" name="job title">
-         <option value="Job Title*">Job Title*</option>
-         <option value="Software Engineer">Software Engineer</option>
-         <option value="Software Developer">Software Developer</option>
-    <option value="Data Scientist">Data Scientist</option>
-    <option value="Project Manager">Project Manager</option>
-    <option value="Business Analyst">Business Analyst</option>
-    <option value="Product Manager">Product Manager</option>
-    <option value="UX/UI Designer">UX/UI Designer</option>
-    <option value="Marketing Specialist">Marketing Specialist</option>
-    <option value="Sales Representative">Sales Representative</option>
-    <option value="Customer Support Specialist">Customer Support Specialist</option>
-    <option value="Human Resources Manager">Human Resources Manager</option>
-    <option value="Finance Analyst">Finance Analyst</option>
-                              </select>
-                        </div>
-                        <div>
-                            <select class="form-select" aria-label="Company Size" name="Company size">
-                                <option value="">Company Size</option>
-                                <option value="1">1-10</option>
-                                <option value="2">11-99</option>
-                                <option value="3">100-300</option>
-                                <option value="4">300-500</option>
-                                <option value="4">501-1000</option>
-                                <option value="4">1001-2000</option>
-                              </select>
-                        </div>
-                        <div>
-                            <select class="form-select" aria-label="Industry" name="industry">
-                                <option value="" >__Industry__</option>
-                                <option value="Agriculture">Agriculture</option>
-                                <option value="Automotive">Automotive</option>
-                                <option value="Banking">Banking</option>
-                                <option value="Construction">Construction</option>
-                                <option value="Education">Education</option>
-                                <option value="Energy">Energy</option>
-                                <option value="Entertainment">Entertainment</option>
-                                <option value="Financial Services">Financial Services</option>
-                                <option value="Healthcare">Healthcare</option>
-                                <option value="Hospitality">Hospitality</option>
-                                <option value="Insurance">Insurance</option>
-                                <option value="Information Technology">Information Technology</option>
-                              </select>
-                        </div>
-                        <div>
-                            <select class="form-select" aria-label="functional/Developement area" name="functional area">
-                            <option value="" disabled selected> functional/Developement area</option>
-                            <option value="Front-End Development">Front-End Development</option>
-                            <option value="Back-End Development">Back-End Development</option>
-                            <option value="Full-Stack Development">Full-Stack Development</option>
-                            <option value="Mobile App Development">Mobile App Development</option>
-                            <option value="Web Development">Web Development</option>
-                            <option value="Database Development">Database Development</option>
-                            <option value="DevOps">DevOps</option>
-                            <option value="Cloud Development">Cloud Development</option>
-                            <option value="Software Engineering">Software Engineering</option>
-                            <option value="Game Development">Game Development</option>
-                            </select>
-                        </div>
-                        <div>
-                            <input type="text" class="form-control"
-                             id="State"  name="state"
-                            placeholder="State">
-                        </div>
-                        <div>
-                            <input type="text" class="form-control" name="Zip"
-                             id="Zip" 
-                            placeholder="Zip">
-                        </div>
-                        <div>
-                            <select class="form-select" aria-label="Country" name="country"
-                                <option value="" > country</option>
-                                <option value="AF">Afghanistan</option>
-    <option value="AL">Albania</option>
-    <option value="DZ">Algeria</option>
-    <option value="AD">Andorra</option>
-    <option value="AO">Angola</option>
-    <option value="AG">Antigua and Barbuda</option>
-    <option value="AR">Argentina</option>
-    <option value="AM">Armenia</option>
-    <option value="AU">Australia</option>
-    <option value="AT">Austria</option>
-    <option value="AZ">Azerbaijan</option>
-    <option value="BS">Bahamas</option>
-    <option value="BH">Bahrain</option>
-    <option value="BD">Bangladesh</option>
-    <option value="BB">Barbados</option>
-    <option value="BY">Belarus</option>
-    <option value="BE">Belgium</option>
-    <option value="BZ">Belize</option>
-    <option value="BJ">Benin</option>
-    <option value="BT">Bhutan</option>
-    <option value="BO">Bolivia</option>
-    <option value="BA">Bosnia and Herzegovina</option>
-    <option value="BW">Botswana</option>
-    <option value="BR">Brazil</option>
-    <option value="BN">Brunei</option>
-    <option value="BG">Bulgaria</option>
-    <option value="BF">Burkina Faso</option>
-    <option value="BI">Burundi</option>
-    <option value="CV">Cabo Verde</option>
-    <option value="KH">Cambodia</option>
-    <option value="CM">Cameroon</option>
-    <option value="CA">Canada</option>
-    <option value="CF">Central African Republic</option>
-    <option value="TD">Chad</option>
-    <option value="CL">Chile</option>
-    <option value="CN">China</option>
-    <option value="CO">Colombia</option>
-    <option value="KM">Comoros</option>
-    <option value="CG">Congo</option>
-    <option value="CR">Costa Rica</option>
-    <option value="HR">Croatia</option>
-    <option value="CU">Cuba</option>
-    <option value="CY">Cyprus</option>
-    <option value="CZ">Czech Republic</option>
-    <option value="DK">Denmark</option>
-    <option value="DJ">Djibouti</option>
-    <option value="DM">Dominica</option>
-    <option value="DO">Dominican Republic</option>
-    <option value="EC">Ecuador</option>
-    <option value="EG">Egypt</option>
-    <option value="SV">El Salvador</option>
-    <option value="GQ">Equatorial Guinea</option>
-    <option value="ER">Eritrea</option>
-    <option value="EE">Estonia</option>
-    <option value="SZ">Eswatini</option>
-    <option value="ET">Ethiopia</option>
-    <option value="FJ">Fiji</option>
-    <option value="FI">Finland</option>
-    <option value="FR">France</option>
-    <option value="GA">Gabon</option>
-    <option value="GM">Gambia</option>
-    <option value="GE">Georgia</option>
-    <option value="DE">Germany</option>
-    <option value="GH">Ghana</option>
-    <option value="GR">Greece</option>
-    <option value="GD">Grenada</option>
-    <option value="GT">Guatemala</option>
-    <option value="GN">Guinea</option>
-    <option value="GW">Guinea-Bissau</option>
-    <option value="GY">Guyana</option>
-    <option value="HT">Haiti</option>
-    <option value="HN">Honduras</option>
-    <option value="HU">Hungary</option>
-    <option value="IS">Iceland</option>
-    <option value="IN">India</option>
-    <option value="ID">Indonesia</option>
-    <option value="IR">Iran</option>
-    <option value="IQ">Iraq</option>
-    <option value="IE">Ireland</option>
-    <option value="IL">Israel</option>
-    <option value="IT">Italy</option>
-    <option value="JM">Jamaica</option>
-    <option value="JP">Japan</option>
-    <option value="JO">Jordan</option>
-    <option value="KZ">Kazakhstan</option>
-    <option value="KE">Kenya</option>
-    <option value="KI">Kiribati</option>
-    <option value="KR">South Korea</option>
-    <option value="KW">Kuwait</option>
-    <option value="KG">Kyrgyzstan</option>
-    <option value="LA">Laos</option>
-    <option value="LV">Latvia</option>
-    <option value="LB">Lebanon</option>
-    <option value="LS">Lesotho</option>
-    <option value="LR">Liberia</option>
-    <option value="LY">Libya</option>
-    <option value="LI">Liechtenstein</option>
-    <option value="LT">Lithuania</option>
-    <option value="LU">Luxembourg</option>
-    <option value="MG">Madagascar</option>
-    <option value="MW">Malawi</option>
-    <option value="MY">Malaysia</option>
-    <option value="MV">Maldives</option>
-    <option value="ML">Mali</option>
-    <option value="MT">Malta</option>
-    <option value="MH">Marshall Islands</option>
-    <option value="MR">Mauritania</option>
-    <option value="MU">Mauritius</option>
-    <option value="MX">Mexico</option>
-    <option value="FM">Micronesia</option>
-    <option value="MD">Moldova</option>
-    <option value="MC">Monaco</option>
-    <option value="MN">Mongolia</option>
-    <option value="ME">Montenegro</option>
-    <option value="MA">Morocco</option>
-    <option value="MZ">Mozambique</option>
-    <option value="MM">Myanmar</option>
-    <option value="NA">Namibia</option>
-    <option value="NR">Nauru</option>
-    <option value="NP">Nepal</option>
-    <option value="NL">Netherlands</option>
-    <option value="NZ">New Zealand</option>
-    <option value="NI">Nicaragua</option>
-    <option value="NE">Niger</option>
-    <option value="NG">Nigeria</option>
-    <option value="NU">Niue</option>
-    <option value="NF">Norfolk Island</option>
-    <option value="MP">Northern Mariana Islands</option>
-    <option value="NO">Norway</option>
-    <option value="OM">Oman</option>
-    <option value="PK">Pakistan</option>
-    <option value="PW">Palau</option>
-    <option value="PA">Panama</option>
-    <option value="PG">Papua New Guinea</option>
-    <option value="PY">Paraguay</option>
-    <option value="PE">Peru</option>
-    <option value="PH">Philippines</option>
-    <option value="PN">Pitcairn Islands</option>
-    <option value="PL">Poland</option>
-    <option value="PT">Portugal</option>
-    <option value="PR">Puerto Rico</option>
-    <option value="QA">Qatar</option>
-    <option value="RE">Réunion</option>
-    <option value="RO">Romania</option>
-    <option value="RU">Russia</option>
-    <option value="RW">Rwanda</option>
-    <option value="SH">Saint Helena</option>
-    <option value="KN">Saint Kitts and Nevis</option>
-    <option value="LC">Saint Lucia</option>
-    <option value="PM">Saint Pierre and Miquelon</option>
-    <option value="VC">Saint Vincent and the Grenadines</option>
-    <option value="WS">Samoa</option>
-    <option value="SM">San Marino</option>
-                            </select>
-                        </div>
-                        <div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                  <p> The Adobe family of companies would like to bring you great content like 
-                                    this and keep you informed with personalized communications about Adobe’s 
-                                    products and services via email and telephone. By submitting this form,
-                                     you agree to receive these communications at the email address and phone
-                                      numbers you provided. 
-                                    See our Privacy Policy for more details or to opt out at any time.</p>
-                                </label>
-                        </div>
-                        <div>
-                            <button type="submit" class="btn btn-primary" style="background-color: red;">Download</button>
-                        </div>
-                     </form>
+                    <div class="card-body">
+                        <form id="contact-form" action="https://formspree.io/f/xyzgjryl" method="POST">
+                            <div class="mb-3">
+                                <button type="submit" class="btn btn-link" style="padding: 18px; color: rgb(10, 10, 10); font-size: larger; font-weight: 500;">Download Now</button>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="FirstName" placeholder="First name">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="LastName" placeholder="Last name">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" name="email" placeholder="Email">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="Contact no" placeholder="Mobile no">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="Company Name" placeholder="Company Name">
+                            </div>
+                            <div class="mb-3">
+                                <select class="form-select" name="job title">
+                                    <option value="" disabled selected>Job Title*</option>
+                                    <option value="Software Engineer">Software Engineer</option>
+                                    <option value="Software Developer">Software Developer</option>
+                                    <option value="Data Scientist">Data Scientist</option>
+                                    <option value="Project Manager">Project Manager</option>
+                                    <option value="Business Analyst">Business Analyst</option>
+                                    <option value="Product Manager">Product Manager</option>
+                                    <option value="UX/UI Designer">UX/UI Designer</option>
+                                    <option value="Marketing Specialist">Marketing Specialist</option>
+                                    <option value="Sales Representative">Sales Representative</option>
+                                    <option value="Customer Support Specialist">Customer Support Specialist</option>
+                                    <option value="Human Resources Manager">Human Resources Manager</option>
+                                    <option value="Finance Analyst">Finance Analyst</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <select class="form-select" name="Company size">
+                                    <option value="" disabled selected>Company Size</option>
+                                    <option value="1">1-10</option>
+                                    <option value="2">11-99</option>
+                                    <option value="3">100-300</option>
+                                    <option value="4">300-500</option>
+                                    <option value="5">501-1000</option>
+                                    <option value="6">1001-2000</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <select class="form-select" name="industry">
+                                    <option value="" disabled selected>Industry</option>
+                                    <option value="Agriculture">Agriculture</option>
+                                    <option value="Automotive">Automotive</option>
+                                    <option value="Banking">Banking</option>
+                                    <option value="Construction">Construction</option>
+                                    <option value="Education">Education</option>
+                                    <option value="Energy">Energy</option>
+                                    <option value="Entertainment">Entertainment</option>
+                                    <option value="Financial Services">Financial Services</option>
+                                    <option value="Healthcare">Healthcare</option>
+                                    <option value="Hospitality">Hospitality</option>
+                                    <option value="Insurance">Insurance</option>
+                                    <option value="Information Technology">Information Technology</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <select class="form-select" name="functional area">
+                                    <option value="" disabled selected>Functional/Development Area</option>
+                                    <option value="Front-End Development">Front-End Development</option>
+                                    <option value="Back-End Development">Back-End Development</option>
+                                    <option value="Full-Stack Development">Full-Stack Development</option>
+                                    <option value="Mobile App Development">Mobile App Development</option>
+                                    <option value="Web Development">Web Development</option>
+                                    <option value="Database Development">Database Development</option>
+                                    <option value="DevOps">DevOps</option>
+                                    <option value="Cloud Development">Cloud Development</option>
+                                    <option value="Software Engineering">Software Engineering</option>
+                                    <option value="Game Development">Game Development</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="state" placeholder="State">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" name="Zip" placeholder="Zip">
+                            </div>
+                            <div class="mb-3">
+                                <select class="form-select" name="country">
+                                    <option value="" disabled selected>Country</option>
+                                    <option value="AF">Afghanistan</option>
+                                    <option value="AL">Albania</option>
+                                    <option value="DZ">Algeria</option>
+                                    <option value="AD">Andorra</option>
+                                    <option value="AO">Angola</option>
+                                    <option value="AG">Antigua and Barbuda</option>
+                                    <!-- More options... -->
+                                    <option value="WS">Samoa</option>
+                                    <option value="SM">San Marino</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        <p>The Adobe family of companies would like to bring you great content like this and keep you informed with personalized communications about Adobe’s products and services via email and telephone. By submitting this form, you agree to receive these communications at the email address and phone numbers you provided. See our Privacy Policy for more details or to opt out at any time.</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div style="text-align: center;">
+                                <button type="submit" class="btn btn-primary"style="background-color: red;">Download</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
-              </div>
             </div>
-    </body>
-    </div>
-    <footer>
-         
-        <div class="footer">
-           <p> 3501, Jack Northrop Ave, Hawthorne, CA 90250.
+        </div>
+    </main>
+    <footer class="footer">
+        <p> 3501, Jack Northrop Ave, Hawthorne, CA 90250.
             Copyright © 2022 Martech Series</p>
-         
-          <p> Martech Series Privacy Policy</p>
-           </div>
 
-    </footer>    
+          <p> Martech Series Privacy Policy</p>
+     
+    </footer>
 </body>
 </html>
